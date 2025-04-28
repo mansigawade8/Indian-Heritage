@@ -57,7 +57,7 @@ function formatMessage(message) {
 function CulturaSay(message) {
   const formattedMessage = formatMessage(message); // Format the message
   const botMessage = `<div class="name-tag">Cultura:</div><div class="Cultura-message">${formattedMessage}</div>`;
-  chatMessages.innerHTML += `<div style="margin-bottom:10px;">🧕 ${botMessage}</div>`;
+  chatMessages.innerHTML += `<div style="margin-bottom:10px;">👧🏻 ${botMessage}</div>`;
   saveHistory();
   chatMessages.scrollTop = chatMessages.scrollHeight;
 }
@@ -72,7 +72,7 @@ function userSay(message) {
 
 // Typing animation
 function showTyping() {
-  const typing = `<div id="typing" style="margin-bottom:10px;">🧕 <div class="name-tag">Cultura:</div><div class="Cultura-message typing-dots"></div></div>`;
+  const typing = `<div id="typing" style="margin-bottom:10px;">👧🏻 <div class="name-tag">Cultura:</div><div class="Cultura-message typing-dots"></div></div>`;
   chatMessages.innerHTML += typing;
   chatMessages.scrollTop = chatMessages.scrollHeight;
 }
